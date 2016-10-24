@@ -41,8 +41,9 @@ It may not be feasible to move *all* resources to plugins right away. For each
 compute resource, we should:
 
 * Identify at least one maintainer for the new plugin
-* Create a new repo `theforeman/foreman-<resource>`
+* Create a new repo `theforeman/foreman_<resource>`
 * Move the appropriate code from Foreman Core to the plugin
+* Get Jenkins tests in place for the new plugin
 * Release the plugin
 * Send a PR to Core to delete the unused code (and maybe Fog dependencies)
 
